@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posada Bendición — Riviera Maya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <header class="nav" id="nav">
+    <a href="#" class="nav__logo">Posada Bendición</a>
+    <nav class="nav__links">
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#reservar" class="btn btn--outline">Reservar</a>
+    <button class="nav__burger" aria-label="Menú">&#9776;</button>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1800&q=80" alt="Vista aérea Riviera Maya" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Riviera Maya · México</p>
+      <h1 class="hero__title">Donde el Caribe<br /><em>susurra tu nombre</em></h1>
+      <p class="hero__sub">Boutique hotel frente al mar en el corazón de la Riviera Maya</p>
+      <div class="hero__ctas">
+        <a href="#reservar" class="btn btn--primary">Reservar ahora</a>
+        <a href="#habitaciones" class="btn btn--ghost">Ver habitaciones</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+      <p>Descubre</p>
+    </div>
+  </section>
+
+  <!-- ── BOOKING BAR ── -->
+  <section class="booking" id="reservar">
+    <form class="booking__form">
+      <div class="booking__field">
+        <label>Llegada</label>
+        <input type="date" />
+      </div>
+      <div class="booking__divider"></div>
+      <div class="booking__field">
+        <label>Salida</label>
+        <input type="date" />
+      </div>
+      <div class="booking__divider"></div>
+      <div class="booking__field">
+        <label>Huéspedes</label>
+        <select>
+          <option>1 adulto</option>
+          <option>2 adultos</option>
+          <option>2 adultos + 1 niño</option>
+          <option>2 adultos + 2 niños</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn--primary">Verificar disponibilidad</button>
+    </form>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about">
+    <div class="about__img-wrap">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80" alt="Alberca del hotel" />
+      <div class="about__badge">
+        <span class="about__badge-num">12</span>
+        <span class="about__badge-text">años de<br />hospitalidad</span>
+      </div>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow">Nuestra historia</p>
+      <h2>Un refugio<br /><em>íntimo y auténtico</em></h2>
+      <p>Posada Bendición nació del sueño de crear un espacio donde la selva y el mar se encuentran. Cada rincón fue diseñado para conectarte con la esencia más pura del Caribe mexicano, con la calidez y el alma de una posada familiar.</p>
+      <p>Con solo 18 suites de diseño, ofrecemos una experiencia verdaderamente exclusiva: atención personalizada, cocina de temporada y acceso privado a la playa.</p>
+      <a href="#habitaciones" class="btn btn--text">Conoce nuestras suites →</a>
+    </div>
+  </section>
+
+  <!-- ── HABITACIONES ── -->
+  <section class="rooms" id="habitaciones">
+    <div class="rooms__header">
+      <p class="eyebrow">Alojamiento</p>
+      <h2>Nuestras <em>suites</em></h2>
+    </div>
+    <div class="rooms__grid">
+
+      <article class="room-card room-card--featured">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Suite Cenote" />
+          <span class="room-card__tag">Más solicitada</span>
+        </div>
+        <div class="room-card__body">
+          <h3>Suite Cenote</h3>
+          <p>Vista al mar, tina exterior, terraza privada con hamaca y acceso directo a la playa.</p>
+          <div class="room-card__meta">
+            <span>80 m²</span>
+            <span>2 adultos</span>
+            <span>Vista al mar</span>
+          </div>
+          <div class="room-card__footer">
+            <p class="room-card__price">desde <strong>$4,800 MXN</strong> / noche</p>
+            <a href="#reservar" class="btn btn--primary btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700&q=80" alt="Suite Selva" />
+        </div>
+        <div class="room-card__body">
+          <h3>Suite Selva</h3>
+          <p>Rodeada de vegetación tropical con ducha al aire libre y terraza privada.</p>
+          <div class="room-card__meta">
+            <span>55 m²</span>
+            <span>2 adultos</span>
+            <span>Vista jardín</span>
+          </div>
+          <div class="room-card__footer">
+            <p class="room-card__price">desde <strong>$3,200 MXN</strong> / noche</p>
+            <a href="#reservar" class="btn btn--outline btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=700&q=80" alt="Villa Bendición" />
+          <span class="room-card__tag room-card__tag--gold">Premium</span>
+        </div>
+        <div class="room-card__body">
+          <h3>Villa Bendición</h3>
+          <p>Villa exclusiva con alberca privada, rooftop y servicio de mayordomo 24 h.</p>
+          <div class="room-card__meta">
+            <span>160 m²</span>
+            <span>4 adultos</span>
+            <span>Frente al mar</span>
+          </div>
+          <div class="room-card__footer">
+            <p class="room-card__price">desde <strong>$9,500 MXN</strong> / noche</p>
+            <a href="#reservar" class="btn btn--outline btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCIAS ── -->
+  <section class="experiences" id="experiencias">
+    <div class="experiences__bg">
+      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1800&q=80" alt="Experiencias Riviera Maya" />
+      <div class="experiences__overlay"></div>
+    </div>
+    <div class="experiences__content">
+      <p class="eyebrow eyebrow--light">Más que un hotel</p>
+      <h2>Vive la <em>Riviera Maya</em></h2>
+      <div class="exp__grid">
+        <div class="exp__card">
+          <div class="exp__icon">◎</div>
+          <h4>Buceo & Snorkel</h4>
+          <p>El segundo arrecife de coral más grande del mundo a 10 min en lancha.</p>
+        </div>
+        <div class="exp__card">
+          <div class="exp__icon">◈</div>
+          <h4>Cenotes privados</h4>
+          <p>Tours exclusivos para huéspedes a los cenotes menos conocidos de la zona.</p>
+        </div>
+        <div class="exp__card">
+          <div class="exp__icon">◇</div>
+          <h4>Spa Temazcal</h4>
+          <p>Rituales de purificación ancestral manejados por curanderos locales.</p>
+        </div>
+        <div class="exp__card">
+          <div class="exp__icon">◉</div>
+          <h4>Gastronomía maya</h4>
+          <p>Cenas bajo las estrellas con ingredientes de la milpa y el mar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALERÍA ── -->
+  <section class="gallery" id="galeria">
+    <div class="gallery__header">
+      <p class="eyebrow">Galería</p>
+      <h2>Un <em>paraíso</em> en imágenes</h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall">
+        <img src="https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?w=700&q=80" alt="Alberca al atardecer" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Terraza" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&q=80" alt="Habitación" />
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=900&q=80" alt="Playa privada" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?w=600&q=80" alt="Spa" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIOS ── -->
+  <section class="testimonials">
+    <p class="eyebrow">Lo que dicen nuestros huéspedes</p>
+    <div class="testimonials__grid">
+      <blockquote class="testi">
+        <p>"Una experiencia que no olvidaremos. El servicio, la comida y la vista son simplemente perfectos. Regresaremos el próximo año sin duda."</p>
+        <footer>— Andrea M., CDMX</footer>
+      </blockquote>
+      <blockquote class="testi">
+        <p>"Vinimos en luna de miel y superó todas las expectativas. La Villa Bendición con alberca privada es un sueño hecho realidad."</p>
+        <footer>— Carlos & Sofía, Monterrey</footer>
+      </blockquote>
+      <blockquote class="testi">
+        <p>"El tour a los cenotes privados es una experiencia única. Se nota que el equipo ama lo que hace y conoce la región a la perfección."</p>
+        <footer>— James T., Nueva York</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section class="contact" id="contacto">
+    <div class="contact__map">
+      <!-- Placeholder de mapa -->
+      <div class="contact__map-placeholder">
+        <p>📍 Posada Bendición · Riviera Maya, México</p>
+        <span>Mapa interactivo aquí</span>
+      </div>
+    </div>
+    <div class="contact__info">
+      <p class="eyebrow">Encuéntranos</p>
+      <h2>Contacto</h2>
+      <ul class="contact__list">
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Dirección</strong>
+            <p>Carretera Tulum–Boca Paila Km 8.5<br />Tulum, Q.R. 77780, México</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Teléfono / WhatsApp</strong>
+            <p>+52 984 123 4567</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Correo</strong>
+            <p>hola@posadabendicion.com</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Check-in / Check-out</strong>
+            <p>3:00 pm / 12:00 pm</p>
+          </div>
+        </li>
+      </ul>
+      <div class="contact__social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TripAdvisor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo">Posada Bendición</p>
+        <p>Riviera Maya · México</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#habitaciones">Habitaciones</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Posada Bendición. Todos los derechos reservados.</p>
+      <p>Diseño web — propuesta</p>
+    </div>
+  </footer>
+
+</body>
+</html>
