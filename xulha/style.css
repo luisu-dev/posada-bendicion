@@ -522,18 +522,8 @@ em { font-style: italic; color: var(--teal); }
   grid-template-columns: 1fr 1fr;
   min-height: 500px;
 }
-.contact__map { background: var(--sand-d); }
-.contact__map-placeholder {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  color: var(--ink-60);
-}
-.contact__map-placeholder p { font-size: 1rem; font-weight: 500; }
-.contact__map-placeholder span { font-size: 0.8rem; border: 1px dashed var(--sand-d); padding: 0.4rem 1rem; border-radius: var(--radius); }
+.contact__map { background: var(--sand-d); overflow: hidden; }
+.contact__map iframe { display: block; min-height: 500px; }
 .contact__info {
   padding: 6rem 5rem;
   background: var(--teal-d);
