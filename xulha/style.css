@@ -317,6 +317,11 @@ em { font-style: italic; color: var(--teal); }
   text-align: center;
   margin-bottom: 4rem;
 }
+.rooms__header .rooms__sub {
+  font-size: 0.95rem;
+  color: var(--ink-60);
+  margin-top: 0.75rem;
+}
 .rooms__grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -324,6 +329,10 @@ em { font-style: italic; color: var(--teal); }
   grid-template-columns: 1.6fr 1fr 1fr;
   gap: 1.5rem;
   align-items: start;
+}
+.rooms__grid--secondary {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.5rem;
 }
 
 .room-card {
@@ -383,6 +392,12 @@ em { font-style: italic; color: var(--teal); }
 }
 .room-card__price { font-size: 0.8rem; color: var(--ink-60); }
 .room-card__price strong { font-size: 1rem; color: var(--ink); font-weight: 500; }
+.room-card__avail {
+  font-size: 0.72rem;
+  color: var(--ink-60);
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
 
 
 /* ══════════════════════════════════════════
@@ -630,6 +645,7 @@ em { font-style: italic; color: var(--teal); }
    ══════════════════════════════════════════ */
 @media (max-width: 1024px) {
   .rooms__grid { grid-template-columns: 1fr 1fr; }
+  .rooms__grid--secondary { grid-template-columns: 1fr 1fr; }
   .room-card--featured { grid-column: span 2; }
   .room-card--featured .room-card__img { height: 300px; }
   .exp__grid { grid-template-columns: repeat(2, 1fr); }
@@ -658,6 +674,7 @@ em { font-style: italic; color: var(--teal); }
 
   .rooms { padding: 5rem 1.5rem; }
   .rooms__grid { grid-template-columns: 1fr; }
+  .rooms__grid--secondary { grid-template-columns: 1fr; }
   .room-card--featured { grid-column: span 1; }
 
   .exp__grid { grid-template-columns: 1fr 1fr; }
