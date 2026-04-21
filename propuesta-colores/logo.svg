@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" role="img" aria-label="Posada La Bendición">
+  <defs>
+    <radialGradient id="wg" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#C0EEF8"/>
+      <stop offset="100%" stop-color="#46B4CC"/>
+    </radialGradient>
+    <path id="tc" d="M 22,420 A 620,620 0 0,0 378,420"/>
+  </defs>
+
+  <!-- ─── WATER OVAL ─── -->
+  <ellipse cx="200" cy="298" rx="178" ry="80" fill="url(#wg)"/>
+
+  <!-- ─── BEACH STRIP ─── -->
+  <path d="M 68,282 Q 200,268 332,282 Q 200,293 68,282 Z" fill="#DDD0A8"/>
+
+  <!-- ─── VEGETATION LEFT ─── -->
+  <ellipse cx="144" cy="273" rx="24" ry="13" fill="#58986A"/>
+  <ellipse cx="130" cy="268" rx="16" ry="9"  fill="#48865A"/>
+
+  <!-- ─── VEGETATION RIGHT ─── -->
+  <ellipse cx="256" cy="273" rx="24" ry="13" fill="#58986A"/>
+  <ellipse cx="270" cy="268" rx="16" ry="9"  fill="#48865A"/>
+
+  <!-- ─── BUNGALOW ─── -->
+  <rect x="177" y="242" width="46" height="32" rx="2" fill="#EEF8FC"/>
+  <rect x="184" y="252" width="11" height="18" rx="1" fill="#6ECCE6"/>
+  <rect x="205" y="252" width="11" height="18" rx="1" fill="#6ECCE6"/>
+  <line x1="189" y1="252" x2="189" y2="270" stroke="#50BAD4" stroke-width="1"/>
+  <line x1="210" y1="252" x2="210" y2="270" stroke="#50BAD4" stroke-width="1"/>
+  <rect x="170" y="271" width="60" height="5" rx="2" fill="#C2AF98"/>
+  <rect x="176" y="264" width="2" height="12" rx="1" fill="#AE9A82"/>
+  <rect x="189" y="264" width="2" height="12" rx="1" fill="#AE9A82"/>
+  <rect x="209" y="264" width="2" height="12" rx="1" fill="#AE9A82"/>
+  <rect x="222" y="264" width="2" height="12" rx="1" fill="#AE9A82"/>
+
+  <!-- Palapa roof shadow -->
+  <ellipse cx="200" cy="244" rx="36" ry="8" fill="#1888A0" opacity="0.38"/>
+  <!-- Palapa roof -->
+  <circle cx="200" cy="228" r="34" fill="#36B8D2"/>
+  <!-- Roof texture lines -->
+  <line x1="200" y1="195" x2="200" y2="244" stroke="#259AB6" stroke-width="1.6" opacity="0.55"/>
+  <line x1="182" y1="198" x2="213" y2="244" stroke="#259AB6" stroke-width="1.6" opacity="0.55"/>
+  <line x1="169" y1="209" x2="222" y2="240" stroke="#259AB6" stroke-width="1.6" opacity="0.55"/>
+  <line x1="218" y1="198" x2="187" y2="244" stroke="#259AB6" stroke-width="1.6" opacity="0.55"/>
+  <line x1="231" y1="209" x2="178" y2="240" stroke="#259AB6" stroke-width="1.6" opacity="0.55"/>
+  <!-- Roof tip -->
+  <circle cx="200" cy="195" r="4" fill="#259AB6"/>
+
+  <!-- ─── ROCKS RIGHT ─── -->
+  <ellipse cx="294" cy="287" rx="17" ry="9" fill="#8E9A9C"/>
+  <ellipse cx="308" cy="283" rx="13" ry="7" fill="#7C8A8C"/>
+  <circle cx="294" cy="279" r="3.5" fill="#D45252" opacity="0.85"/>
+  <circle cx="302" cy="276" r="2.5" fill="#E06648" opacity="0.85"/>
+
+  <!-- ─── WATER RIPPLES ─── -->
+  <ellipse cx="200" cy="310" rx="62" ry="9"  fill="none" stroke="#C4EAF6" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="200" cy="320" rx="40" ry="5.5" fill="none" stroke="#C4EAF6" stroke-width="1"   opacity="0.4"/>
+
+  <!-- ══ FROND TEMPLATE (pointing right, length≈60px for small / 86px for large) ══ -->
+
+  <!-- ── LEFT INNER PALM ── -->
+  <path d="M 156,276 C 153,258 148,230 142,186" stroke="#AEBEC0" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g transform="translate(142,186)">
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#2AACC4" transform="rotate(-165)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#3CBCD6" transform="rotate(-128)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#50CDE2" transform="rotate(-92)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#3CBCD6" transform="rotate(-55)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#2AACC4" transform="rotate(-18)"/>
+  </g>
+
+  <!-- ── RIGHT INNER PALM ── -->
+  <path d="M 244,276 C 247,258 252,230 258,186" stroke="#AEBEC0" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g transform="translate(258,186)">
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#2AACC4" transform="rotate(-15)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#3CBCD6" transform="rotate(-52)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#50CDE2" transform="rotate(-88)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#3CBCD6" transform="rotate(-125)"/>
+    <path d="M0,0 C14,5 38,7 60,2 C42,0 14,-3 0,0 Z" fill="#2AACC4" transform="rotate(-162)"/>
+  </g>
+
+  <!-- ══ LEFT TALL PALM ══ -->
+  <path d="M 62,322 C 68,264 82,178 96,55" stroke="#AEBEC0" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 62,322 C 68,264 82,178 96,55" stroke="#96A8AA" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="2.5,18" opacity="0.5"/>
+  <g transform="translate(96,55)">
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#2AACC4" transform="rotate(-170)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#3CBCD6" transform="rotate(-138)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#50CDE2" transform="rotate(-106)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#3CBCD6" transform="rotate(-74)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#50CDE2" transform="rotate(-42)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#2AACC4" transform="rotate(-10)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#2AACC4" transform="rotate(158)"/>
+  </g>
+
+  <!-- ══ RIGHT TALL PALM ══ -->
+  <path d="M 338,322 C 332,264 318,178 304,55" stroke="#AEBEC0" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 338,322 C 332,264 318,178 304,55" stroke="#96A8AA" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="2.5,18" opacity="0.5"/>
+  <g transform="translate(304,55)">
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#2AACC4" transform="rotate(-10)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#3CBCD6" transform="rotate(-42)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#50CDE2" transform="rotate(-74)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#3CBCD6" transform="rotate(-106)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#50CDE2" transform="rotate(-138)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#2AACC4" transform="rotate(-170)"/>
+    <path d="M0,0 C20,7 58,11 86,4 C62,1 20,-4 0,0 Z" fill="#2AACC4" transform="rotate(22)"/>
+  </g>
+
+  <!-- ─── TEXT ─── -->
+  <text font-family="'Cormorant Garamond', Georgia, serif" font-size="30" font-weight="600" letter-spacing="5" fill="#1A5E8A">
+    <textPath href="#tc" startOffset="50%" text-anchor="middle">LA BENDICIÓN</textPath>
+  </text>
+
+  <!-- Gold accent dots -->
+  <circle cx="38"  cy="413" r="3.5" fill="#B89B6E"/>
+  <circle cx="362" cy="413" r="3.5" fill="#B89B6E"/>
+</svg>

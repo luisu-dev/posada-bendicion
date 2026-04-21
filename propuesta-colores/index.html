@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posada Bendición — Xulha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── PROPOSAL BANNER ── -->
+  <div class="proposal-banner">
+    <span>Propuesta de paleta — Azules del logo</span>
+    <a href="../xulha/index.html">Ver paleta original →</a>
+  </div>
+
+  <!-- ── NAV ── -->
+  <header class="nav" id="nav">
+    <a href="#" class="nav__logo-link">
+      <img src="logo.png" alt="Posada Bendición" class="nav__logo-img" />
+    </a>
+    <nav class="nav__links">
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#reservar" class="btn btn--outline">Reservar</a>
+    <button class="nav__burger" aria-label="Menú">&#9776;</button>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1800&q=80" alt="Xulha al amanecer" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Xulha · México</p>
+      <h1 class="hero__title">Un lugar donde<br /><em>detenerse el tiempo</em></h1>
+      <p class="hero__sub">Posada boutique con 6 habitaciones únicas en el corazón de Xulha</p>
+      <div class="hero__ctas">
+        <a href="#reservar" class="btn btn--primary">Reservar estadía</a>
+        <a href="#habitaciones" class="btn btn--ghost">Ver habitaciones</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+      <p>Descubre</p>
+    </div>
+  </section>
+
+  <!-- ── BOOKING BAR ── -->
+  <section class="booking" id="reservar">
+    <form class="booking__form">
+      <div class="booking__field">
+        <label>Llegada</label>
+        <input type="date" />
+      </div>
+      <div class="booking__divider"></div>
+      <div class="booking__field">
+        <label>Salida</label>
+        <input type="date" />
+      </div>
+      <div class="booking__divider"></div>
+      <div class="booking__field">
+        <label>Huéspedes</label>
+        <select>
+          <option>1 adulto</option>
+          <option>2 adultos</option>
+          <option>2 adultos + 1 niño</option>
+          <option>2 adultos + 2 niños</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn--primary">Verificar disponibilidad</button>
+    </form>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about">
+    <div class="about__img-wrap">
+      <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=900&q=80" alt="Interior de la posada" />
+      <div class="about__badge">
+        <span class="about__badge-num">6</span>
+        <span class="about__badge-text">habitaciones<br />únicas</span>
+      </div>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow">Nuestra historia</p>
+      <h2>Una posada con<br /><em>alma propia</em></h2>
+      <p>Posada Bendición es un rincón íntimo en Xulha, pensado para quienes buscan desconectarse sin renunciar al confort. Cada una de nuestras seis habitaciones fue diseñada con materiales locales y una calidez que solo una posada familiar puede ofrecer.</p>
+      <p>Aquí el ritmo lo marca el sonido del mar, los colores del atardecer y el aroma de la cocina hecha en casa. Bienvenido a tu segundo hogar.</p>
+      <a href="#habitaciones" class="btn btn--text">Conoce las habitaciones →</a>
+    </div>
+  </section>
+
+  <!-- ── HABITACIONES ── -->
+  <section class="rooms" id="habitaciones">
+    <div class="rooms__header">
+      <p class="eyebrow">Alojamiento</p>
+      <h2>Seis habitaciones,<br /><em>seis experiencias</em></h2>
+      <p class="rooms__sub">Cada espacio tiene su propio carácter. Todas comparten la misma calidez.</p>
+    </div>
+    <div class="rooms__grid">
+
+      <article class="room-card room-card--featured">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Habitación Brisa" />
+          <span class="room-card__tag">La favorita</span>
+        </div>
+        <div class="room-card__body">
+          <h3>Habitación Brisa</h3>
+          <p>Terraza privada con vista al horizonte, cama king y materiales naturales que invitan al descanso.</p>
+          <div class="room-card__meta">
+            <span>Vista al mar</span>
+            <span>King bed</span>
+            <span>Terraza</span>
+          </div>
+          <div class="room-card__footer">
+            <span class="room-card__avail">Disponibilidad a consultar</span>
+            <a href="#reservar" class="btn btn--primary btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700&q=80" alt="Habitación Palma" />
+        </div>
+        <div class="room-card__body">
+          <h3>Habitación Palma</h3>
+          <p>Rodeada de vegetación, fresca y tranquila, con ducha exterior y hamaca propia.</p>
+          <div class="room-card__meta">
+            <span>Vista jardín</span>
+            <span>Queen bed</span>
+            <span>Ducha ext.</span>
+          </div>
+          <div class="room-card__footer">
+            <span class="room-card__avail">Disponibilidad a consultar</span>
+            <a href="#reservar" class="btn btn--outline btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=700&q=80" alt="Habitación Sol" />
+        </div>
+        <div class="room-card__body">
+          <h3>Habitación Sol</h3>
+          <p>Luminosa y amplia, con paleta cálida y acceso directo al jardín de la posada.</p>
+          <div class="room-card__meta">
+            <span>Jardín privado</span>
+            <span>King bed</span>
+            <span>Baño abierto</span>
+          </div>
+          <div class="room-card__footer">
+            <span class="room-card__avail">Disponibilidad a consultar</span>
+            <a href="#reservar" class="btn btn--outline btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Segunda fila: 3 habitaciones restantes -->
+    <div class="rooms__grid rooms__grid--secondary">
+
+      <article class="room-card">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&q=80" alt="Habitación Marea" />
+        </div>
+        <div class="room-card__body">
+          <h3>Habitación Marea</h3>
+          <p>Íntima y acogedora, perfecta para descanso en pareja con detalles artesanales locales.</p>
+          <div class="room-card__meta">
+            <span>Vista interior</span>
+            <span>Queen bed</span>
+            <span>Balcón</span>
+          </div>
+          <div class="room-card__footer">
+            <span class="room-card__avail">Disponibilidad a consultar</span>
+            <a href="#reservar" class="btn btn--outline btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?w=600&q=80" alt="Habitación Tierra" />
+        </div>
+        <div class="room-card__body">
+          <h3>Habitación Tierra</h3>
+          <p>Tonos terrosos, techos de palapa y una calma que envuelve desde el primer momento.</p>
+          <div class="room-card__meta">
+            <span>Palapa</span>
+            <span>Twin / King</span>
+            <span>Patio</span>
+          </div>
+          <div class="room-card__footer">
+            <span class="room-card__avail">Disponibilidad a consultar</span>
+            <a href="#reservar" class="btn btn--outline btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Habitación Cielo" />
+          <span class="room-card__tag room-card__tag--gold">La más espaciosa</span>
+        </div>
+        <div class="room-card__body">
+          <h3>Habitación Cielo</h3>
+          <p>La más amplia de la posada, con sala de estar, tina y vistas panorámicas al entorno.</p>
+          <div class="room-card__meta">
+            <span>Vista panorámica</span>
+            <span>King bed</span>
+            <span>Tina + sala</span>
+          </div>
+          <div class="room-card__footer">
+            <span class="room-card__avail">Disponibilidad a consultar</span>
+            <a href="#reservar" class="btn btn--outline btn--sm">Reservar</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCIAS ── -->
+  <section class="experiences" id="experiencias">
+    <div class="experiences__bg">
+      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1800&q=80" alt="Xulha naturaleza" />
+      <div class="experiences__overlay"></div>
+    </div>
+    <div class="experiences__content">
+      <p class="eyebrow eyebrow--light">Más allá de la habitación</p>
+      <h2>Vive <em>Xulha</em></h2>
+      <div class="exp__grid">
+        <div class="exp__card">
+          <div class="exp__icon">◎</div>
+          <h4>Servicio — placeholder</h4>
+          <p>Descripción del servicio o experiencia disponible para los huéspedes.</p>
+        </div>
+        <div class="exp__card">
+          <div class="exp__icon">◈</div>
+          <h4>Servicio — placeholder</h4>
+          <p>Descripción del servicio o experiencia disponible para los huéspedes.</p>
+        </div>
+        <div class="exp__card">
+          <div class="exp__icon">◇</div>
+          <h4>Servicio — placeholder</h4>
+          <p>Descripción del servicio o experiencia disponible para los huéspedes.</p>
+        </div>
+        <div class="exp__card">
+          <div class="exp__icon">◉</div>
+          <h4>Servicio — placeholder</h4>
+          <p>Descripción del servicio o experiencia disponible para los huéspedes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALERÍA ── -->
+  <section class="gallery" id="galeria">
+    <div class="gallery__header">
+      <p class="eyebrow">Galería</p>
+      <h2>Posada Bendición<br /><em>en imágenes</em></h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall">
+        <img src="https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?w=700&q=80" alt="Alberca al atardecer" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Terraza" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&q=80" alt="Habitación" />
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=900&q=80" alt="Vista al mar" />
+      </div>
+      <div class="gallery__item">
+        <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=600&q=80" alt="Jardín" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIOS ── -->
+  <section class="testimonials">
+    <p class="eyebrow">Lo que dicen nuestros huéspedes</p>
+    <div class="testimonials__grid">
+      <blockquote class="testi">
+        <p>"Encontramos exactamente lo que buscábamos: paz, calidez y un lugar que se siente como propio. Regresaremos sin dudarlo."</p>
+        <footer>— Andrea M., Ciudad de México</footer>
+      </blockquote>
+      <blockquote class="testi">
+        <p>"La habitación Brisa fue mágica. Despertarnos con esa vista y ese silencio no tiene precio. Una posada con alma de verdad."</p>
+        <footer>— Carlos & Sofía, Monterrey</footer>
+      </blockquote>
+      <blockquote class="testi">
+        <p>"Xulha es un lugar que pocas personas conocen, y Posada Bendición es el mejor lugar para descubrirlo. Absolutamente recomendable."</p>
+        <footer>— James T., Chicago</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section class="contact" id="contacto">
+    <div class="contact__map">
+      <div class="contact__map-placeholder">
+        <p>📍 Posada Bendición · Xulha, México</p>
+        <span>Mapa interactivo — próximamente</span>
+      </div>
+    </div>
+    <div class="contact__info">
+      <p class="eyebrow">Encuéntranos</p>
+      <h2>Contacto</h2>
+      <ul class="contact__list">
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Ubicación</strong>
+            <p>Xulha, Quintana Roo, México</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Teléfono / WhatsApp</strong>
+            <p>Por confirmar</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Correo</strong>
+            <p>hola@posadabendicion.com</p>
+          </div>
+        </li>
+        <li>
+          <span class="contact__icon">✦</span>
+          <div>
+            <strong>Check-in / Check-out</strong>
+            <p>3:00 pm / 12:00 pm</p>
+          </div>
+        </li>
+      </ul>
+      <div class="contact__social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="logo.png" alt="Posada Bendición" class="footer__logo-img" />
+        <p>Xulha · México</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#habitaciones">Habitaciones</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Posada Bendición. Todos los derechos reservados.</p>
+      <p>Xulha · México</p>
+    </div>
+  </footer>
+
+</body>
+</html>
