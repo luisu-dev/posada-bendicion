@@ -9,8 +9,6 @@
   --teal:     #1a6b6b;
   --teal-d:   #124f4f;
   --teal-l:   #2a8a8a;
-  --ocean:    #1a5e8a;
-  --ocean-l:  #2278aa;
   --gold:     #b89b6e;
   --gold-l:   #d4b88a;
   --ink:      #1c1a18;
@@ -107,11 +105,8 @@ em { font-style: italic; color: var(--teal); }
 .nav__logo-img {
   height: 72px;
   width: auto;
-  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.45));
-  transition: filter var(--trans);
-}
-.nav.scrolled .nav__logo-img {
-  filter: none;
+  border-radius: 6px;
+  transition: opacity var(--trans);
 }
 .nav__links {
   display: flex;
@@ -590,8 +585,8 @@ em { font-style: italic; color: var(--teal); }
 .footer__logo-img {
   height: 100px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.82;
+  border-radius: 8px;
+  opacity: 0.9;
   margin-bottom: 0.25rem;
 }
 .footer__brand p:last-child { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
