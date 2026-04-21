@@ -105,7 +105,6 @@ em { font-style: italic; color: var(--teal); }
 .nav__logo-img {
   height: 72px;
   width: auto;
-  border-radius: 6px;
   transition: opacity var(--trans);
 }
 .nav__links {
@@ -585,8 +584,6 @@ em { font-style: italic; color: var(--teal); }
 .footer__logo-img {
   height: 100px;
   width: auto;
-  border-radius: 8px;
-  opacity: 0.9;
   margin-bottom: 0.25rem;
 }
 .footer__brand p:last-child { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
