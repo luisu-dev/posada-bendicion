@@ -176,6 +176,29 @@
       btn.closest('.room-type__thumbs').querySelectorAll('.room-type__thumb').forEach(function(b) { b.classList.remove('active'); });
       btn.classList.add('active');
     }
+
+    (function() {
+      var nav = document.getElementById('nav');
+
+      function onScroll() {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      var burger = nav.querySelector('.nav__burger');
+      burger.addEventListener('click', function() {
+        nav.classList.toggle('nav--open');
+        burger.innerHTML = nav.classList.contains('nav--open') ? '&#10005;' : '&#9776;';
+      });
+
+      nav.querySelectorAll('.nav__links a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          nav.classList.remove('nav--open');
+          burger.innerHTML = '&#9776;';
+        });
+      });
+    })();
   </script>
 
   <!-- ── EXPERIENCIAS ── -->
@@ -219,16 +242,16 @@
       <h2>Posada Bendición<br /><em>en imágenes</em></h2>
     </div>
     <div class="gallery__grid">
-      <div class="gallery__item gallery__item--tall">
+      <div class="gallery__item gallery__item--wide">
         <img src="img/galeria/IMG_0233.jpg" alt="Posada Bendición" />
       </div>
-      <div class="gallery__item">
+      <div class="gallery__item gallery__item--tall">
         <img src="img/galeria/IMG_0235.jpg" alt="Posada Bendición" />
       </div>
       <div class="gallery__item">
         <img src="img/galeria/IMG_0244.jpg" alt="Posada Bendición" />
       </div>
-      <div class="gallery__item gallery__item--wide">
+      <div class="gallery__item">
         <img src="img/galeria/IMG_0281.jpg" alt="Posada Bendición" />
       </div>
       <div class="gallery__item">

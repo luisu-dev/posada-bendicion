@@ -534,7 +534,7 @@ em { font-style: italic; color: var(--teal); }
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 260px 260px;
+  grid-auto-rows: 260px;
   gap: 1rem;
 }
 .gallery__item { overflow: hidden; border-radius: var(--radius); }
@@ -701,7 +701,7 @@ em { font-style: italic; color: var(--teal); }
     animation-range: 0px 80px;
   }
   @keyframes navTextScroll {
-    to { color: var(--teal); }
+    to { color: #1a6b6b; }
   }
 }
 
@@ -722,6 +722,30 @@ em { font-style: italic; color: var(--teal); }
   .nav { padding: 1.25rem 1.5rem; }
   .nav__links, .nav > .btn { display: none; }
   .nav__burger { display: block; }
+
+  /* Menú móvil abierto */
+  .nav--open .nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    padding: 1rem 0 1.5rem;
+  }
+  .nav--open .nav__links a {
+    color: var(--ink);
+    padding: 0.85rem 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--sand-d);
+  }
+  .nav--open .nav__links a:last-child { border-bottom: none; }
+  .nav--open .nav__links a:hover { color: var(--teal); background: var(--sand); }
+  .nav--open .nav > .btn { display: none; }
 
   .hero__ctas { flex-direction: column; align-items: center; }
 
