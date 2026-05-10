@@ -8,6 +8,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --ldg-psb-background: #ffffff;
+      --ldg-psb-border-radius: 0.42em;
+      --ldg-psb-box-shadow: 0px 24px 54px 0px rgba(0,0,0,0.1);
+      --ldg-psb-padding: 14px;
+      --ldg-psb-input-background: #ffffff;
+      --ldg-psb-button-border-radius: 3.58em;
+      --ldg-psb-color-primary: #1a6b6b;
+      --ldg-psb-color-primary-lighter: #2a8a8a;
+      --ldg-psb-color-primary-darker: #124f4f;
+      --ldg-psb-color-primary-contrast: #ffffff;
+      --ldg-semantic-color-primary: #1a6b6b;
+      --ldg-semantic-color-primary-lighter: #2a8a8a;
+      --ldg-semantic-color-primary-darker: #124f4f;
+      --ldg-semantic-color-primary-contrast: #ffffff;
+      --ldg-component-modal-z-index: 999;
+    }
+    #lodgify-search-bar { width: 100%; }
+  </style>
+  <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
 </head>
 <body>
 
@@ -49,28 +70,37 @@
 
   <!-- ── BOOKING BAR ── -->
   <section class="booking" id="reservar">
-    <form class="booking__form">
-      <div class="booking__field">
-        <label>Llegada</label>
-        <input type="date" />
-      </div>
-      <div class="booking__divider"></div>
-      <div class="booking__field">
-        <label>Salida</label>
-        <input type="date" />
-      </div>
-      <div class="booking__divider"></div>
-      <div class="booking__field">
-        <label>Huéspedes</label>
-        <select>
-          <option>1 adulto</option>
-          <option>2 adultos</option>
-          <option>2 adultos + 1 niño</option>
-          <option>2 adultos + 2 niños</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn--primary">Verificar disponibilidad</button>
-    </form>
+    <div class="booking__widget">
+      <div
+        id="lodgify-search-bar"
+        data-website-id="653215"
+        data-language-code="es"
+        data-checkout-page-url="https://checkout.lodgify.com/ricardo-pantoja/en/#/16403"
+        data-dates-check-in-label="Llegada"
+        data-dates-check-out-label="Salida"
+        data-guests-counter-label="Huéspedes"
+        data-guests-input-singular-label="{{NumberOfGuests}} huésped"
+        data-guests-input-plural-label="{{NumberOfGuests}} huéspedes"
+        data-location-input-label="Ubicación"
+        data-search-button-label="Verificar disponibilidad"
+        data-dates-input-min-stay-tooltip-text='{"one":"Mínimo {minStay} noche","other":"Mínimo {minStay} noches"}'
+        data-guests-breakdown-label="Huéspedes"
+        data-adults-label='{"one":"adulto","other":"adultos"}'
+        data-adults-description="A partir de {minAge} años"
+        data-children-label='{"one":"niño","other":"niños"}'
+        data-children-description="De {minAge} a {maxAge} años"
+        data-children-not-allowed-label="No apto para niños"
+        data-infants-label='{"one":"bebé","other":"bebés"}'
+        data-infants-description="Menos de {maxAge} años"
+        data-infants-not-allowed-label="No apto para bebés"
+        data-pets-label='{"one":"mascota","other":"mascotas"}'
+        data-pets-not-allowed-label="No permitidas"
+        data-done-label="Listo"
+        data-new-tab="true"
+        data-version="stable"
+        data-has-guests-breakdown
+      ></div>
+    </div>
   </section>
 
   <!-- ── ABOUT ── -->
